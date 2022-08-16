@@ -1,0 +1,269 @@
+/* Global */
+
+.page-body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 
+     min-content
+      1fr 
+     min-content;
+    align-content: start;
+}
+
+a {
+    text-decoration: none;
+    color: #660000;
+}
+
+button {
+    font-size: 10px !important;
+    font: inherit;
+    background-color: black;
+    color: whitesmoke;
+    text-transform: uppercase;
+    border: none;
+    max-width: 70px;
+    max-height: 30px;
+}
+
+button:hover,
+button:focus,
+button:active {
+    background-color: darkgray;
+}
+
+/* Grid */
+
+.page {
+    height: 100%;
+}
+
+/*Logo*/
+
+.main-header-logo {
+    margin-top: 8px;  
+    margin-bottom: 1px;  
+    padding-bottom: 15px;
+    justify-self: center; /* Центрирование логотипа */
+}
+
+.main-navigation-bar {
+    background-color: whitesmoke;
+}
+
+/* Main header */
+
+.main-header {
+    margin-bottom: 20px;
+}
+
+.site-navigation {
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-navigation a,
+.user-navigation a {
+    display: block;
+    padding: 20px;
+}
+
+#NEW {
+    color: #daa520 !important;
+}
+
+#NEW:focus,
+#NEW:active,
+#NEW:hover {
+    background-color: goldenrod !important;
+    color: whitesmoke !important;
+    opacity: .8;
+}    
+
+#themes:focus,
+#themes:active,
+#themes:hover {
+    background-color: #AC2C41;
+    color: whitesmoke;
+    opacity: .8;
+}
+
+.login {
+    color:silver;
+}
+
+.login:focus,
+.login:active,
+.login:hover {
+     background-color:black;
+     color: whitesmoke;
+     opacity: .7;
+}
+/* Main navigation */
+
+.main-navigation {
+    line-height: 30px;
+    display: grid;
+}
+
+.main-navigation-wrapper {
+    width: 950px;
+    margin: 0 auto;
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns:
+     1fr
+     max-content;
+}
+
+/*User navigation*/
+
+.user-navigation {
+    color: grey;
+    outline-offset: 0px;
+}
+
+/* Main footer */
+
+.main-footer{
+    color: whitesmoke;
+    background-color: #AC2C41;
+    text-align: center;
+}
+
+.main-footer .container{
+    display: grid;
+    grid-template-columns: 
+     1fr 1fr;
+}
+
+.footer-company {
+    margin: 5px;
+    justify-self:auto;
+    
+}
+
+.footer-information {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-contacts {
+    margin: 5px;
+    justify-self: auto;
+}
+
+/* Container */
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+    padding: 5px 5px;
+}
+
+/* Main */
+
+.main-photo {
+     text-align: center;
+}
+
+.our-brands-list {
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.our-brands-list li {
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.our-brands-navigation {
+    display: flex;
+    justify-self: center;
+}
+
+.our-brands-navigation .container{
+    display: grid;
+    grid-template-columns: 
+     1fr 1fr 1fr 
+     min-content;
+} 
+
+.our-brands-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.our-brands-list img {
+    height: 50px;
+}
+
+.brands-logo {
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+.modal {
+    background-color: #660000;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal-enter {
+    font-size: 20px;
+}
+
+.login-form {
+    text-transform: none;
+    font-size: 12px;
+}
+
+.login-user {
+    text-transform: none;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.login-password {
+    text-transform: none;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.login-help {
+    text-transform: none;
+}
+
+.restore {
+    color: whitesmoke;
+    text-decoration:underline;
+}

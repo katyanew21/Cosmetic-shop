@@ -1,0 +1,311 @@
+<!-- Autor: Katsiaryna Navitskaya
+Date: April 2022 -->
+
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Beauty Bay Belarus</title>
+        <link href="MakeUp.css" rel="stylesheet">
+    </head>
+    <body class="page-body inner-page">
+        
+        <header class="main-header">
+
+            <nav class="main-navigation">
+             <div class="main-navigation-bar">  
+                 <div class="main-navigation-wrapper">
+                 <a href="Main.html" class="main-header-logo"> 
+                   <img src="../LOGO/logo.png" alt="Логотип магазина Beauty Bay" height="30px" width="70px">
+                 </a>
+    
+             
+                   <ul class="site-navigation">
+                     <li><a id="NEW" href="#">NEW!</a></li>
+                     <li class="Online"><a id="themes" href="MakeUp.html">Макияж</a></li>
+                     <li><a id="themes" href="#">Парфюмерия</a></li>
+                     <li><a id="themes" href="#">Лицо</a></li>
+                     <li><a id="themes" href="#">Тело</a></li>
+                     <li><a id="themes" href="#">Волосы</a></li>
+                     <li><a id="themes" href="#">Контакты</a></li>
+                   </ul>
+                
+                   <div class="user-navigation">
+                      <a class="login" href="Login.html">Вход</a> 
+                   </div>
+                 </div> 
+             </div>
+            </nav>
+         </header>
+
+        <main class="page-catalog container">
+                <ul class="breadcrumbs">
+                    <li>
+                       <a href="Main.html">
+                         <h3>Главная</h3>
+                       </a>
+                    </li>   
+                    <li class="breadcrumbs-current">
+                       <h3>Макияж</h3>
+                    </li> 
+                </ul>
+
+        
+            <section class="filters">
+                <form class="filters" method="get" action="#">
+                    <fieldset>
+                        <legend>Для Лица</legend>
+                        <ul>
+                          <li class="filter-option filter-checkbox"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Praimers" id="Praimers">
+                            <label for="Praimers">Праймеры</label></li>
+                         <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="ton">
+                           <label for="ton">Тональные средства</label></li>
+                         <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="kont">
+                           <label for="kont">Контуринг</label></li>
+                         <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="shim">
+                           <label for="shim">Шиммеры</label></li>
+                         <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="rum">
+                           <label for="rum">Румяна</label></li>
+                         <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="bronz">
+                           <label for="bronz">Бронзер</label></li>
+                         <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="pudr">
+                           <label for="pudr">Пудра</label></li>
+                         <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="kons">
+                           <label for="kons">Корректирующие средства / Консиллеры</label></li>
+                         <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="paletka">
+                           <label for="paletka">Палетки</label></li>
+                       </ul>  
+                     </fieldset>
+
+                    <fieldset>
+                       <legend>Для Глаз</legend>
+                       <ul>
+                      <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="T">
+                          <label for="T">Тени</label></li>
+                       <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="KK">
+                          <label for="KK">Контурные карандаши</label></li>
+                       <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="P">
+                          <label for="P">Подводка</label></li>
+                       <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="BR">
+                          <label for="BR">Для бровей</label></li>
+                       <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="PAL">
+                          <label for="PAL">Палетки</label></li>
+                       <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="RES">
+                          <label for="RES">Накладные ресницы</label></li> 
+                       </ul>   
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Для Губ</legend>
+                        <ul>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pomada">
+                           <label for="pomada">Помада</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="blesk">
+                           <label for="blesk">Блеск</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="tint">
+                           <label for="tint">Тинт</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="KoKa">
+                           <label for="KoKa">Контурные карандаши</label></li>
+                        </ul>   
+                     </fieldset>
+
+                     <fieldset>
+                         <legend>Цена в б. р.</legend>
+                         <ul>
+                         <li><input type="range" min="0" max="250" step="0,01"></li>
+                         </ul>
+                     </fieldset>
+    
+                    <fieldset>
+                        <legend>Бренд</legend>
+                        <ul>
+                        <li class="filter-checkbox filter-option"><input  class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="BeautyBay">
+                            <label for="BeautyBay">BEAUTY BAY</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="Chanel">
+                            <label for="Chanel">CHANEL</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="Colourpop">
+                            <label for="Colourpop">COLOURPOP</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="GiorgioArmani">
+                            <label for="GiorgioArmani">GIORGIO ARMANI</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="HudaBeauty">
+                            <label for="HudaBeauty">HUDA BEAUTY</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="Kiko">
+                            <label for="Kiko">KIKO</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="Mac">
+                            <label for="Mac">MAC</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="Revolution">
+                            <label for="Revolution">REVOLUTION</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="Sephora">
+                            <label for="Sephora">SEPHORA</label></li>
+                        <li class="filter-checkbox filter-option"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="Too Faced Too">
+                            <label for="Too Faced Too">TOO FACED TOO</label></li>
+                    </ul>
+                    </fieldset>
+                <p>
+                   <input type="submit" value="Применить" class="button">
+                </p>
+            </form>
+            </section>
+           
+            <uls class="catalog-list">
+             <li class="product-items">
+                <a href="#">
+                    <img  class="catalog-item-image" src="../PRODUCTS/Huda Beauty, Lilac .jpg" alt="Lilac Huda Beauty" width="100px">
+                    <br>
+                    Huda Beauty 
+                    <br>
+                    Палетка теней для век "Lilac Obsession"
+                    <p class="catalog-item-price">
+                        <b>150 р.</b>
+                        <button type="button">Купить</button>
+                    </p>
+                </a>
+            </li>
+
+            <li class="product-items">
+                <a href="#">
+                    <img  class="catalog-item-image" src="../PRODUCTS/Estee Lauder, Double Wear.jpg" alt="Estee Lauder toner" width="100px">
+                    <br>
+                    Estée Lauder
+                    <br>
+                    Тональный крем "Double Wear"
+                    <p class="catalog-item-price">
+                        <b>110 р.</b>
+                        <button type="button">Купить</button>
+                    </p>
+                </a>
+            </li>
+
+            <li class="product-items">
+                <a href="#">
+                    <img  class="catalog-item-image" src="../PRODUCTS/Tom Ford, Lipstick.jpg" alt="Tom Ford leapstick" width="100px">
+                    <br>
+                    Tom Ford
+                    <br>
+                    Помада для губ "Lip Color"
+                    <p class="catalog-item-price">
+                        <b>60 р.</b>
+                        <button type="button">Купить</button>
+                    </p>
+                </a>
+            </li>
+
+            <li class="product-items">
+                <a href="#">
+                    <img  class="catalog-item-image" src="../PRODUCTS/Clarins, Lip Comfort Oil.tiff" alt="Clarins oil" width="100px">
+                    <br>
+                    Clarins
+                    <br>
+                    Масло-блеск для губ "Lip Comfort Oil"
+                    <p class="catalog-item-price">
+                        <b>50 р.</b>
+                        <button type="button">Купить</button>
+                    </p>
+                </a>
+            </li>
+
+            <li class="product-items">
+                <a href="#">
+                    <img  class="catalog-item-image" src="../PRODUCTS/Mac, Powder.jpg" alt="Mac puder" width="100px">
+                    <br>
+                    Mac
+                    <br>
+                    Минеральная пудра "Mineralize Natural"
+                    <p class="catalog-item-price">
+                        <b>90 р.</b>
+                        <button type="button">Купить</button>
+                    </p>
+                </a>
+            </li>
+
+            <li class="product-items">
+                <a href="#">
+                    <img  class="catalog-item-image" src="../PRODUCTS/Bobby Brown, Eyeshadow.jpg" alt="Bobbi Brown eyes shadow" width="100px">
+                    <br>
+                    Bobbi Brown 
+                    <br>
+                    Тени для век "Metallic Eye Shadow"
+                    <p class="catalog-item-price">
+                        <b>65 р.</b>
+                        <button type="button">Купить</button>
+                    </p>
+                </a>
+            </li>
+
+            <li class="product-items">
+                <a href="#">
+                    <img  class="catalog-item-image" src="../PRODUCTS/Dior, Pallete.png" alt="Dior eyes shadow palet" width="100px">
+                    <br>
+                    Dior
+                    <br>
+                    Палетка теней "5 COULEURS COUTURE"
+                    <p class="catalog-item-price">
+                        <b>140 р.</b>
+                        <button type="button">Купить</button>
+                    </p>
+                </a>
+            </li>
+
+            <li class="product-items">
+                <a href="#">
+                    <img  class="catalog-item-image" src="../PRODUCTS/Revolution, Highliter.jpg" alt="Revolution highlaiter" width="100px">
+                    <br>
+                    Revolution
+                    <br>
+                    Палетка хайлайтеров "CHEEK KIT"
+                    <p class="catalog-item-price">
+                        <b>46 р.</b>
+                        <button type="button">Купить</button>
+                    </p>
+                </a>
+            </li>
+
+            <li class="product-items">
+                <a href="#">
+                    <img class="catalog-item-image" src="../PRODUCTS/Nars, Water Shadow.jpg" alt="Nars blush" width="100px">
+                    <br>
+                    Nars
+                    <br>
+                    Жидкие румяна "Dolce Vita"
+                    <p class="catalog-item-price">
+                        <b>85 р.</b>
+                        <button type="button">Купить</button>
+                    </p>
+                </a>
+            </li>
+            <p>
+            <section class="pagination-list">
+            <li class="pagination-items pagination-items-current"><a href="#">1</a></li>
+            <li class="pagination-items"><a href="#">2</a></li>
+            <li class="pagination-items"><a href="#">3</a></li>
+            <li class="pagination-items"><a href="#">4</a></li>
+            <li class="pagination-items"><a href="#">5</a></li>
+            </section></uls></p>
+          </section>
+        </main>
+
+        <footer>
+            <nav class="main-footer">
+  
+            <div class="container">
+              <section class="footer-company">
+                  <h4>Информация</h4>
+                  <ul class="footer-information">
+                     <li><a href="#">О нас</a></li>
+                     <li><a href="#">Доставка</a></li> 
+                 </ul>
+             </section> 
+             
+              <section class="footer-contacts">
+                  <h4>Мы в Instagram</h4>
+                  <a href="https://www.instagram.com/beautybay_belarus/" target="blank">
+                      <img src="../LOGO/Instagram logo.png" alt="Instagram" width="50px" class="contacts-Instagram">
+                  </a>
+              </section>
+            </div>  
+          
+            </nav>
+          </footer>
+    </body>
+</html>
